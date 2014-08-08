@@ -18,12 +18,12 @@ class WysiwygWidget extends \Asgard\Form\Widget {
 		if(!isset($options['config']))
 			$options['config'] = $this->form->getRequest()->url->to('wysiwyg/ckeditor/config.js');
 		
-		$this->form->getApp()['html']->includeJS('wysiwyg/ckeditor/ckeditor.js');
+		$this->form->getContainer()['html']->includeJS('wysiwyg/ckeditor/ckeditor.js');
 		return \Asgard\Form\HTMLHelper::tag('textarea', [
 			'name'	=>	$this->name,
 			'id'	=>	$id,
 		]+$attrs,
-		$this->value ? $this->form->getApp()['html']->sanitize($this->value):'').
+		$this->value ? $this->form->getContainer()['html']->sanitize($this->value):'').
 		"<script>
 		//<![CDATA[
 		$(function(){
