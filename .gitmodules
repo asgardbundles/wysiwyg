@@ -1,6 +1,6 @@
 [submodule "web/wysiwyg/ckeditor"]
 	path = web/wysiwyg/ckeditor
-	url = git@github.com:asgardmodules/ckeditor.git
+	url = https://github.com/asgardmodules/ckeditor.git
 [submodule "web/wysiwyg/kcfinder"]
 	path = web/wysiwyg/kcfinder
-	url = git@github.com:asgardmodules/kcfinder.git
+	url = https://github.com/asgardmodules/kcfinder.git
